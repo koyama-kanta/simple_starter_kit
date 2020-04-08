@@ -1,0 +1,17 @@
+doctype html
+
+include /__includes/head
+include /__includes/header
+include /__includes/footer
+include /__includes/end_of_body
+
+block vars
+
+html(lang="en")
+	+head(meta, page)
+	body(data-app, data-api=page.api)
+		+header()
+		.container
+			block content
+		+footer()
+		+end_of_body()

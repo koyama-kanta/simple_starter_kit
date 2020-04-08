@@ -1,0 +1,26 @@
+extends /__template/default
+
+block vars
+	-
+		var page = {
+			pathname: '/',
+			api: 'TEST'
+		}
+		var meta = {
+			title: '',
+			description: '',
+			keywords: '',
+			og: {
+				title: '',
+				description: '',
+				type: '',
+				image: '',
+				url: '',
+			}
+		}
+
+block content
+	.l-content
+		div(data-module="Test")
+			h4 test api
+			div(data-test-renderer)
